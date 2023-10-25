@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Manager_Employee_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter The Net Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="be3-LU-5is">
+                                <rect key="frame" x="101" y="64" width="212" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Valid Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kuh-ZI-rGC">
+                                <rect key="frame" x="101" y="143" width="212" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Pc-SK-Iag">
+                                <rect key="frame" x="98.666666666666671" y="239.00000000000003" width="216.66666666666663" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpI-QP-gJz">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Employee">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="employeeSalary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oco-W7-BJ0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBe-4Z-Md7">
+                                        <rect key="frame" x="118.33333333333334" y="0.0" width="98.333333333333343" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Manager">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="managerSalary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a24-Cp-smh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMp-DC-nwP">
+                                <rect key="frame" x="183" y="383" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YMp-DC-nwP" firstAttribute="top" secondItem="2Pc-SK-Iag" secondAttribute="bottom" constant="109.67" id="100-Ua-Yup"/>
+                            <constraint firstItem="Kuh-ZI-rGC" firstAttribute="top" secondItem="be3-LU-5is" secondAttribute="bottom" constant="50" id="16q-2S-Rno"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YMp-DC-nwP" secondAttribute="bottom" constant="329" id="1PL-Tj-MDx"/>
+                            <constraint firstItem="be3-LU-5is" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="8HF-LI-efE"/>
+                            <constraint firstItem="Kuh-ZI-rGC" firstAttribute="leading" secondItem="be3-LU-5is" secondAttribute="leading" id="Ccp-m0-c5T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kuh-ZI-rGC" secondAttribute="bottom" constant="568" id="MaN-Cv-Ha1"/>
+                            <constraint firstItem="Kuh-ZI-rGC" firstAttribute="trailing" secondItem="be3-LU-5is" secondAttribute="trailing" id="cUu-7I-4ZH"/>
+                            <constraint firstItem="be3-LU-5is" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gAf-Hm-LPT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="be3-LU-5is" secondAttribute="bottom" constant="643" id="qzY-UV-jVr"/>
+                            <constraint firstItem="YMp-DC-nwP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rmb-DS-XfA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Pc-SK-Iag" secondAttribute="bottom" constant="462.67000000000002" id="t68-CP-EyE"/>
+                            <constraint firstItem="2Pc-SK-Iag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="txg-jP-LJh"/>
+                            <constraint firstItem="Kuh-ZI-rGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uKt-pH-qhK"/>
+                            <constraint firstItem="2Pc-SK-Iag" firstAttribute="top" secondItem="Kuh-ZI-rGC" secondAttribute="bottom" constant="71" id="xdx-T5-U6A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rsltText" destination="YMp-DC-nwP" id="DVR-zX-Pe3"/>
+                        <outlet property="txtField" destination="Kuh-ZI-rGC" id="7v4-eY-0UY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
